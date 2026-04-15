@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+img {
+    width: 200px;
+}
+
+/* Breakpoints */
+
+/* Tablet < 992px (768*/
+@media screen and (max-width: 992px) {
+    h1 {
+        color: aqua;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        background-color: cadetblue;
+        color: azure;
+    }
+
+    img {
+        display: inline;
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sessao-noticias {
+    width: 920px;
+    height: 800px;
+    margin: 0 auto; /*centraliza sem flexbox - margin lateral automatico*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px dashed salmon;
+}
+
+.sessao-noticias__noticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    border: 2px dashed black;
+}

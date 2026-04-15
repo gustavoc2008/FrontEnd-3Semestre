@@ -1,0 +1,27 @@
+/* 
+Box Model
+    margin
+    padding
+    boder
+    content
+
+    box-sizing
+*/
+
+.caixa {
+    width: 200px;
+    height: 200px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    margin-left: 200px;
+
+    box-sizing: border-box;
+
+    border: 2px solid purple;
+}
