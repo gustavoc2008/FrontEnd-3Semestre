@@ -47,12 +47,12 @@
                         <label class="contact-form__label" for="telefone">Telefone</label>
                     </div>
                     <div class="contact-form__col-b">
+                        <input class="contact-form__input contact-form__input--terco" name="pais" id="pais"
+                            placeholder="+55" type="number">
+                        <input class="contact-form__input contact-form__input--terco" name="ddd" id="ddd"
+                            placeholder="DDD" type="number">
                         <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone"
-                            placeholder="+55" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone"
-                            placeholder="DDD" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone"
-                            placeholder="ex: 99999-9999" type="text">
+                            placeholder="ex: 99999-9999" type="number">
                     </div>
                 </div>
 
@@ -61,12 +61,12 @@
                         <label class="contact-form__label" for="endereco">Endereco</label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input contact-form__input--quarto" name="endereco" id="endereco"
-                            placeholder="cep: 9999-999" type="text">
+                        <input class="contact-form__input contact-form__input--quarto" name="cep" id="cep"
+                            placeholder="cep: 9999-999" type="number" onblur="buscarEndereco(this.value)">
                         <input class="contact-form__input contact-form__input--metade" name="endereco" id="endereco"
                             placeholder="Rua La de Casa" type="text">
-                        <input class="contact-form__input contact-form__input--quarto" name="endereco" id="endereco"
-                            placeholder="ex: 555" type="text">
+                        <input class="contact-form__input contact-form__input--quarto" name="numero" id="numero"
+                            placeholder="ex: 555" type="number">
                     </div>
                 </div>
 
@@ -75,11 +75,11 @@
                         <label class="contact-form__label" for="endereco"></label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input contact-form__input--terco" name="endereco" id="endereco"
-                            placeholder="Apto: 12 Bloco X" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="endereco" id="endereco"
+                        <input class="contact-form__input contact-form__input--terco" name="apto" id="apto"
+                            placeholder="Apto: 12 Bloco X" type="number">
+                        <input class="contact-form__input contact-form__input--terco" name="bairro" id="bairro"
                             placeholder="Bairro" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="endereco" id="endereco"
+                        <input class="contact-form__input contact-form__input--terco" name="cidade" id="cidade"
                             placeholder="Cidade" type="text">
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                         <label class="contact-form__label" for="endereco"></label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input contact-form__input--terco" name="endereco" id="endereco"
+                        <input class="contact-form__input contact-form__input--terco" name="estado" id="estado"
                             placeholder="Estado" type="text">
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                     <div class="contact-form__col-a"></div>
 
                     <div class="contact-form__col-b contact-form__buttons">
-                        <button class="contact-form__button" type="submit">Cadastrar</button>
+                        <button class="contact-form__button" type="button" onclick="validarFormulario();">Cadastrar</button>
                         <button class="contact-form__button" type="reset">Limpar</button>
                     </div>
 
@@ -118,6 +118,9 @@
             </form>
         </div>
     </main>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

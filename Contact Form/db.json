@@ -1,0 +1,159 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contatos": [
+    {
+      "nome": "Milena",
+      "sobrenome": "Mares",
+      "email": "maresmilena@gmail.com",
+      "id": "NCp3Az8fBz0"
+    },
+    {
+      "nome": "Guilherme",
+      "sobrenome": "Vieira",
+      "email": "vieiraguilherme@gmail.com",
+      "id": "_dVBhvWi4ng"
+    },
+    {
+      "nome": "Kaua",
+      "sobrenome": "Fidalgo",
+      "email": "fidalgokaua@gmail.com",
+      "id": "fioDvJ_KAus"
+    },
+    {
+      "nome": "Paulo",
+      "sobrenome": "Rubens",
+      "email": "rubenspaulo@gmail.com",
+      "id": "pO-Rrd_PFrQ"
+    },
+    {
+      "nome": "Julio",
+      "sobrenome": "Cesar",
+      "email": "cesarjulio@gmail.com",
+      "id": "tD8JU2kfNHI"
+    },
+    {
+      "nome": "fdsfsd",
+      "sobrenome": "dfsfdf",
+      "id": "la2o3SERUIg"
+    },
+    {
+      "nome": "fdsfsd",
+      "sobrenome": "dfsfdf",
+      "id": "YQofJ0anANk"
+    },
+    {
+      "nome": "Gustavo",
+      "sobrenome": "Costa",
+      "id": "wDvVg2cXaOU"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "QRzRUb-IKyA"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "a56pFrzO6Xc"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "vQxGdUWFXm8"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "kLxihmriO9A"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "JTVAVnI1ztc"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "5o_0_ysqBhw"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "0X1jrxUAGP0"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "EdSw01AuymI"
+    },
+    {
+      "nome": "",
+      "sobrenome": "",
+      "id": "2e5fqjLpDQM"
+    },
+    {
+      "nome": "Gustavo",
+      "sobrenome": "Costa",
+      "id": "d0SLPREHlrg"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Banana",
+      "preco": 3.5,
+      "quantidade": 10,
+      "id": "E1IUGmODmH0"
+    },
+    {
+      "nome": "Kiwi",
+      "preco": 4.67,
+      "quantidade": 20,
+      "id": "nRo6cGZSAeY"
+    },
+    {
+      "nome": "Abacaxi",
+      "preco": 6,
+      "quantidade": 25,
+      "id": "j34sZUomzWU"
+    },
+    {
+      "nome": "Tangerina",
+      "preco": 2.79,
+      "quantidade": 50,
+      "id": "7qM5rY-kXXg"
+    },
+    {
+      "nome": "Melao",
+      "preco": 4.59,
+      "quantidade": 30,
+      "id": "b8Zyg6LkZWw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

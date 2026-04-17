@@ -44,7 +44,7 @@ body {
 
 .header__text {
     font-family: Saira;
-    color: #D0D0D0;
+    color: white;
 }
 
 .contact-form {
@@ -76,7 +76,7 @@ body {
 }
 
 .contact-form__input {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 10px;
     border: none;
     border-radius: 3px;
@@ -91,7 +91,7 @@ body {
 }
 
 .contact-form__textarea {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 15px 10px;
     border: none;
     border-radius: 3px;
@@ -101,7 +101,7 @@ body {
 
 .contact-form__textarea:focus {
     background-color: #3099BC;
-    color: white;
+    color: rgb(255, 255, 255);
     border: 1px solid white;
 }
 
