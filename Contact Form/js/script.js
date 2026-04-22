@@ -7,7 +7,7 @@ async function cadastrarContato(objetoContato) {
         body: JSON.stringify(objetoContato), //objeto que esta sendo transformado em JSON
         headers: {"Content-Type" : "application/json; charset=UTF-8"}
     });
-}
+}   
 
 function validarFormulario() {
     let nome = document.getElementById("nome").value.trim();
