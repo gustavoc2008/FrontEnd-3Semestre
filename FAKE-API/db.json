@@ -11,5 +11,31 @@
       "id": "S3KS1FfF1PI"
     }
   ],
+  "imc": [
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "textoSituacao": "Obesidade 1",
+      "id": "Ieq7AAV8vB4"
+    },
+    {
+      "nome": "Gustavo",
+      "altura": 1.72,
+      "peso": 60,
+      "imc": 20.281233098972418,
+      "textoSituacao": "Saudavel",
+      "id": "bqvcKUs_Oh0"
+    },
+    {
+      "nome": "Milena",
+      "altura": 1.7,
+      "peso": 60,
+      "imc": 20.761245674740486,
+      "textoSituacao": "Saudavel",
+      "id": "OgfIxwxVv0U"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

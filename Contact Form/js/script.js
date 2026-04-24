@@ -15,7 +15,7 @@ function validarFormulario() {
     // let email = document.getElementById("email").value.trim();
     // let pais = document.getElementById("pais").value.trim();
     // let ddd = document.getElementById("ddd").value.trim();
-    // let telefone = document.getElementById("telefone").value.trim();
+    // let telefone = document.getElementById("telefone").value.trim(); 
     // let cep = document.getElementById("telefone").value.trim();
     // let endereco = document.getElementById("endereco").value.trim();
     // let numero = document.getElementById("numero").value.trim();
