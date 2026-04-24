@@ -37,5 +37,49 @@
       "id": "OgfIxwxVv0U"
     }
   ],
+  "numeros": [
+    {
+      "n1": 10,
+      "n2": 10,
+      "op": "multiplicacao",
+      "resultado": "100.00",
+      "id": "_AznEURmtGU"
+    },
+    {
+      "n1": 10,
+      "n2": 10,
+      "op": "multiplicacao",
+      "resultado": "100.00",
+      "id": "M-PKKte6yKQ"
+    },
+    {
+      "n1": 10,
+      "n2": 10,
+      "op": "soma",
+      "resultado": "20.00",
+      "id": "K2DWUhPQHh4"
+    },
+    {
+      "n1": 1,
+      "n2": 1,
+      "op": "soma",
+      "resultado": "2.00",
+      "id": "062dSfw4LXY"
+    },
+    {
+      "n1": 1,
+      "n2": 1,
+      "op": "soma",
+      "resultado": "2.00",
+      "id": "pJ1cAlf-EQk"
+    },
+    {
+      "n1": 10,
+      "n2": 2,
+      "op": "multiplicacao",
+      "resultado": "20.00",
+      "id": "miCDEd2ZwHI"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

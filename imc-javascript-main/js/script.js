@@ -61,7 +61,7 @@ async function cadastrarNaAPI(objetoIMC) {
         const resposta = await fetch("http://localhost:3000/imc", {
             method: "POST",
             body: JSON.stringify(objetoIMC),
-            headers: { "Content-Type": "apllicantion/json; charset=UTF-8" }
+            headers: { "Content-Type": "application/json; charset=UTF-8"    }
         });
 
         return true;
