@@ -51,21 +51,12 @@ function calcular() {
 
     const retorno = cadastrarNaAPI(objetoNumero)
     if (retorno) {
-        const linhaTabela = `
-        <article class="data__card-result">
-        <span><strong>Primeiro Número:</strong> ${n1}</span>
-        <span><strong>Segundo Número:</strong> ${n2}</span>
-        <span><strong>Operação:</strong> ${op}</span>
-        <span><strong>Resultado:</strong> ${resultado}</span>
-        </article>
-    `
-
-        document.getElementById("cadastro").innerHTML += linhaTabela;
+        buscarResultados();
 
         document.getElementById("n1").value = "";
         document.getElementById("n2").value = "";
         document.getElementById("operacao").value = "";
-        document.getElementById("resultado").value = "";
+        document.getElementById("resultado").innerHTML = "";
 
         alert(`Conta foi cadastrada no banco:
                 Primeiro Numero: ${n1}
@@ -119,27 +110,31 @@ async function cadastrarNaAPI(objetoNumero) {
         console.log(error);
         return false;
     }
-}
+}   
 
 async function buscarResultados() {
     try {
-        const area = await fetch("http://localhost:3000/numeros")
-        const dadosRetornados = await retorno.json();
+        const resposta = await fetch("http://localhost:3000/numeros");
+        const dados = await resposta.json();
 
-        console.log(dadosRetornados);
+        const container = document.getElementById("cadastro");
+        container.innerHTML = "";
 
-        for (let i = 0; i < dadosRetornados.length; i++) {
-            const linhaTabela = `<article class="data__card-result">
-                <span><strong>Primeiro Número:</strong> ${n1[i]}</span>
-                <span><strong>Segundo Número:</strong> ${n2[i]}</span>
-                <span><strong>Operação:</strong> ${op[i]}</span>
-                <span><strong>Resultado:</strong> ${resultado[i]}</span>
-            </article>`
+        dados.forEach(item => {
+            const linha = `
+            <article class="data__card-result">
+                <span><strong>Primeiro Número:</strong> ${item.n1}</span>
+                <span><strong>Segundo Número:</strong> ${item.n2}</span>
+                <span><strong>Operação:</strong> ${item.op}</span>
+                <span><strong>Resultado:</strong> ${item.resultado}</span>
+            </article>`;
 
-            document.getElementById("cadastro").innerHTML += linhaTabela;
-        }
+            container.innerHTML += linha;
+        });
+
     } catch (error) {
         console.log(error);
     }
 }
+
 

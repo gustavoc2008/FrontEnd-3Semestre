@@ -30,16 +30,8 @@ function calcular() {
 
     const retorno = cadastrarNaAPI(objetoIMC)//retorna true or false
     if (retorno) {
-        const linhaTabela = `<tr>
-                <th>${nome}</th>
-                <th>${altura}</th>
-                <th>${peso}</th>
-                <th>${imc.toFixed(2)}</th>
-                <th>${textoSituacao}</th>
-                </tr>`
-
-        document.getElementById("cadastro").innerHTML += linhaTabela;
-
+        buscarIMCs();
+        
         document.getElementById("nome").value = "";
         document.getElementById("altura").value = "";
         document.getElementById("peso").value = "";
@@ -61,7 +53,7 @@ async function cadastrarNaAPI(objetoIMC) {
         const resposta = await fetch("http://localhost:3000/imc", {
             method: "POST",
             body: JSON.stringify(objetoIMC),
-            headers: { "Content-Type": "application/json; charset=UTF-8"    }
+            headers: { "Content-Type": "application/json; charset=UTF-8" }
         });
 
         return true;
@@ -104,8 +96,12 @@ function gerarTextoIMC(imc) {
 
 async function buscarIMCs() {
     try {
-        const retorno = await fetch("http://localhost:3000/imc")
+        const retorno = await fetch("http://localhost:3000/imc");
         const dadosRetornados = await retorno.json();
+
+        dadosRetornados.sort((a, b) => {
+            return a.nome.localeCompare(b.nome);
+        });
 
         console.log(dadosRetornados);//dados do cadastro
 

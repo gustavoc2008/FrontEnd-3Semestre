@@ -21,64 +21,58 @@
       "id": "Ieq7AAV8vB4"
     },
     {
-      "nome": "Gustavo",
-      "altura": 1.72,
-      "peso": 60,
-      "imc": 20.281233098972418,
-      "textoSituacao": "Saudavel",
-      "id": "bqvcKUs_Oh0"
-    },
-    {
       "nome": "Milena",
       "altura": 1.7,
       "peso": 60,
       "imc": 20.761245674740486,
       "textoSituacao": "Saudavel",
       "id": "OgfIxwxVv0U"
+    },
+    {
+      "nome": "Gustavo",
+      "altura": 1.72,
+      "peso": 55,
+      "imc": 18.591130340724717,
+      "textoSituacao": "Saudavel",
+      "id": "QZrRJCZ0O2M"
+    },
+    {
+      "nome": "Felipe",
+      "altura": 1.8,
+      "peso": 65,
+      "imc": 20.061728395061728,
+      "textoSituacao": "Saudavel",
+      "id": "kMEFBhKTcDM"
     }
   ],
   "numeros": [
     {
-      "n1": 10,
-      "n2": 10,
-      "op": "multiplicacao",
-      "resultado": "100.00",
-      "id": "_AznEURmtGU"
-    },
-    {
-      "n1": 10,
-      "n2": 10,
-      "op": "multiplicacao",
-      "resultado": "100.00",
-      "id": "M-PKKte6yKQ"
-    },
-    {
-      "n1": 10,
-      "n2": 10,
-      "op": "soma",
-      "resultado": "20.00",
-      "id": "K2DWUhPQHh4"
-    },
-    {
       "n1": 1,
       "n2": 1,
       "op": "soma",
       "resultado": "2.00",
-      "id": "062dSfw4LXY"
+      "id": "ab51JaySf8M"
     },
     {
-      "n1": 1,
-      "n2": 1,
-      "op": "soma",
-      "resultado": "2.00",
-      "id": "pJ1cAlf-EQk"
-    },
-    {
-      "n1": 10,
+      "n1": 2,
       "n2": 2,
-      "op": "multiplicacao",
-      "resultado": "20.00",
-      "id": "miCDEd2ZwHI"
+      "op": "soma",
+      "resultado": "4.00",
+      "id": "UNCyJM7psaA"
+    },
+    {
+      "n1": 1,
+      "n2": 1,
+      "op": "soma",
+      "resultado": "2.00",
+      "id": "Lz3pLOjpk7I"
+    },
+    {
+      "n1": 4,
+      "n2": 4,
+      "op": "subtracao",
+      "resultado": "0.00",
+      "id": "xt34I5knSA8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
