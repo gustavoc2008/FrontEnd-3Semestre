@@ -73,6 +73,20 @@
       "op": "subtracao",
       "resultado": "0.00",
       "id": "xt34I5knSA8"
+    },
+    {
+      "n1": 6,
+      "n2": 7,
+      "op": "soma",
+      "resultado": "13.00",
+      "id": "96zRBu3ZJwA"
+    },
+    {
+      "n1": 3,
+      "n2": 3,
+      "op": "soma",
+      "resultado": "6.00",
+      "id": "UUX17feMLAQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
