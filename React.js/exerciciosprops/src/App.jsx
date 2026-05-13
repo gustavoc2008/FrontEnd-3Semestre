@@ -71,7 +71,7 @@ function App() {
         nome="Notebook Gamer"
         preco={4500}
         categoria="Eletrônicos"
-        estoque={10}
+        estoque={0}
       />
     </div>
 
