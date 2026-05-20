@@ -1,0 +1,13 @@
+{
+  "produtos": [
+    {
+      "nome": "teste ",
+      "preco": 1000,
+      "descricao": "teste descricao",
+      "quantidade": 90,
+      "imagem": "laptop.png.jpg",
+      "id": "eMtg8U2FKJo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
