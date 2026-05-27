@@ -1,20 +1,24 @@
 {
   "generos": [
     {
-      "id": "3",
-      "nome": "Drama"
+      "nome": "Romance",
+      "id": "LqfaxEdBzyc"
+    },
+    {
+      "nome": "Comedia",
+      "id": "JsjLMxlNFSI"
     },
     {
       "nome": "Terror",
-      "id": "O52znFpoE3A"
+      "id": "GMF9h__0aoc"
     },
     {
-      "nome": "Romance",
-      "id": "O4_lF-Pggag"
+      "nome": "Ficcao",
+      "id": "sllDfIGWzqg"
     },
     {
-      "nome": "Ski-fy",
-      "id": "4s9QyK7w7v8"
+      "nome": "Gustavo",
+      "id": "C7M7KSPCm3s"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

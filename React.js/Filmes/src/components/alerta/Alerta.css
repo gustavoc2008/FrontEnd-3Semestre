@@ -1,0 +1,27 @@
+.swal2-container {
+    background-color: rgba(204, 63, 85, 0.2) !important;
+}
+
+.swal2-popup {
+    background-color: #cc3f55!important;
+    color: white !important;
+}
+
+.swal2-confirm {
+    background-color: #730c10 !important;
+}
+
+.swal2-warning{
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+.swal2-success .swal2-success-ring {
+    border: 1px solid white !important;
+    border-color: white !important;
+    color: white !important;
+}
+
+.swal2-success [class*=swal2-success-line]{
+    background-color: white !important;
+}
