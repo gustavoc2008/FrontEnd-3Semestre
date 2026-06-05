@@ -20,7 +20,7 @@ const CadastroGenero = () => {
 
         try {
 
-            const retornoAPI = await api.get("/generos")
+            const retornoAPI = await api.get("/Genero")
 
             setListaGeneros(retornoAPI.data)
 
@@ -41,7 +41,6 @@ const CadastroGenero = () => {
 
     // CADASTRAR GÊNERO
     const cadastrarGenero = async (e) => {
-
         e.preventDefault()
 
         // validar campo
@@ -68,7 +67,7 @@ const CadastroGenero = () => {
 
         try {
 
-            await api.post("/generos", objCadastro)
+            await api.post("/Genero", objCadastro)
 
             Alerta({
                 title: 'Cadastro de Genero',
@@ -81,7 +80,7 @@ const CadastroGenero = () => {
             await getGeneros()
 
             // limpar campo
-            setValor("")
+            limparDados()
 
         } catch (error) {
             Alerta({
@@ -127,7 +126,7 @@ const CadastroGenero = () => {
         try {
 
             const retornoAPI = await api.delete(
-                `/generos/${item.id}`
+                `/Genero/${item.id}`
             )
 
             if (
@@ -142,7 +141,6 @@ const CadastroGenero = () => {
                 })
 
                 await getGeneros()
-
             }
 
         } catch (error) {
@@ -177,8 +175,7 @@ const CadastroGenero = () => {
                 confirmButtonText: 'Fechar'
             })
 
-            return
-
+            return false
         }
 
         const objEditar = {
@@ -187,7 +184,7 @@ const CadastroGenero = () => {
 
         try {
 
-            const retornoAPI = await api.put(`/generos/${id}`, objEditar)
+            const retornoAPI = await api.put(`/Genero/${id}`, objEditar)
             if (retornoAPI.status == 200 || retornoAPI.status == 204) {
                 Alerta({
                     title: 'Cadastro de Genero',
@@ -225,14 +222,12 @@ const CadastroGenero = () => {
 
                 <Cadastro
                     tituloCadastro="Cadastro de Gênero"
+
                     visibilidade="none"
+
                     placeholder="gênero"
 
-                    funcCadastro={
-                        editar
-                            ? editarGenero
-                            : cadastrarGenero
-                    }
+                    funcCadastro={editar ? editarGenero : cadastrarGenero}
 
                     valor={valor}
 
