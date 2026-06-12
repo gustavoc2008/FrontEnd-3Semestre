@@ -1,10 +1,10 @@
 import "./CadastroGenero.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Cadastro from "../../components/Cadastro/Cadastro";
+import Cadastro from "../../components/cadastro/Cadastro";
 import Lista from "../../components/lista/Lista";
 import { useEffect, useState } from "react";
-import api from "../../services/Services";
+import api from "../../Services/services";
 import Swal from "sweetalert2";
 import { Alerta } from "../../components/alerta/Alerta";
 

@@ -6,8 +6,8 @@ const Header = () => {
     const { usuario, setUsuario } = useContext(UsuarioContext)
 
     const logout = () => {
-        setUsuario(null)
         localStorage.removeItem("Usuario")
+        setUsuario(null)
     }
 
     return (

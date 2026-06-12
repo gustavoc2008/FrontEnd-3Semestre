@@ -1,0 +1,18 @@
+.img_filme{
+    width: 100px;
+    height: 120px !important;
+    border-radius: 3px;
+    border: 2px solid rgb(255, 0, 0);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition:  margin-top 0.4s, margin-left 0.4s, box-shadow 0.4s;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.img_filme:hover{
+    background: rgb(105, 37, 223);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    margin-top: 10px;
+}

@@ -6,7 +6,7 @@ import Botao from "../botao/Botao";
 //     cadastro, tituloCadastro, valor, setValor, estilo, 
 //     valorSelect, setValorSelect, listaGeneros 
 //   }) => {}
-  
+
 
 const Cadastro = (props) => {
     return (
@@ -17,16 +17,16 @@ const Cadastro = (props) => {
                 <div className="campos_cadastro">
                     <div className="campo_cad_nome">
                         <label htmlFor="nome">Nome</label>
-                        <input type="text" name="nome" placeholder={`Digite o nome do ${props.placeholder}`} 
-                        //O valor do input vem de props (estado do componente pai)
-                        value={props.valor}
-                        // Atualiza o estado do pai ao digitar
-                        onChange={(e) => props.setValor(e.target.value)}
+                        <input type="text" name="nome" placeholder={`Digite o nome do ${props.placeholder}`}
+                            //O valor do input vem de props (estado do componente pai)
+                            value={props.valor}
+                            // Atualiza o estado do pai ao digitar
+                            onChange={(e) => props.setValor(e.target.value)}
                         />
                     </div>
                     <div className="campo_cad_genero" style={{ display: props.visibilidade }}>
                         <label htmlFor="genero">Gênero</label>
-                        <select name="genero" id="" value={props.valorSelect} onChange={(e) => props.setValorSelect(e.target.value)}>
+                        <select name="genero" id="" value={props.idGenero} onChange={(e) => props.idGenero(e.target.value)}>
                             <option value="" disabled>Selecione</option>
                             {
                                 props.listaGeneros?.map((item) => {
@@ -38,8 +38,21 @@ const Cadastro = (props) => {
                         </select>
                     </div>
                     {
+                        props.mostrarImagem && (
+                            <div className="campo_cad_imagem">
+                                <label htmlFor="imagem">Imagem</label>
+                                <input
+                                    type="file"
+                                    name="imagem"
+                                    accept="image/*"
+                                    onChange={(e) => props.setImagem(e.target.files[0])}
+                                />
+                            </div>
+                        )
+                    }
+                    {
                         props.btnEditar && <Botao nomeDoBotao="Cancelar"
-                        btnEditar={props.btnEditar} cancelarEdicao={props.cancelarEdicao} />
+                            btnEditar={props.btnEditar} cancelarEdicao={props.cancelarEdicao} />
                     }
 
                     <Botao nomeDoBotao={props.btnEditar ? "Salvar" : "Cadastrar"} />
